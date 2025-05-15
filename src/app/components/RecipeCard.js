@@ -1,14 +1,19 @@
-import Image from "next/image"
-const RecipeCard = () => {
+import Image from "next/image";
+
+const RecipeCard = ({ name, image, link }) => {
   return (
     <div className="recipe_card">
-    <Image src="/assets/tiagocollado.jpg"
-    width={300}
-    height={300}
-    alt="Tiago"
-    />
+      <Image
+        src={image}
+        width={300}
+        height={220}
+        alt={"Hola"}
+        className="recipe_img"
+      />
+      <h3>{name}</h3>
+      <button className="recipe_button">Ver receta</button>
     </div>
-  )
-}
+  );
+};
 
-export default RecipeCard
+export default RecipeCard;
