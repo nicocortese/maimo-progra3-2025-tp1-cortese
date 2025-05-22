@@ -55,7 +55,7 @@ h1, h2, h3 {
 .content_search form {
   display: flex;
   align-items: center;
-  gap: 10px;  
+  gap: 10px; 
 }
 
 .content_search input {
@@ -65,9 +65,9 @@ h1, h2, h3 {
   font-size: 12px;
   border: 2px solid #172852;
   border-radius: 10px;
-  width: 250px;
-  background-color: #F0E6FF;
-  color: #757575;
+  width: 300px;
+  background-color: #ffffff;
+  
 }
 
 
@@ -89,17 +89,21 @@ h1, h2, h3 {
   border-color: #172852;
 }
 
-.nav_container h2 {
+.logo_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo_container h2 {
   font-family: "Ephesis", cursive;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 700;
+  letter-spacing: 1px;
   color: #171717;
 }
 
-
-.logo_container {
-  margin-top: 5px;
-}
 
 .footer_container {
   display: flex;
