@@ -1,7 +1,9 @@
 // app/layout.js o app/layout.tsx
 
 import "./globals.css";
-import { Kanit, Ephesis, Playfair_Display, Work_Sans } from "next/font/google";
+import { Kanit, Ephesis, Playfair_Display, Work_Sans, EB_Garamond } from "next/font/google";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 const kanit = Kanit({
   subsets: ["latin"],
@@ -23,22 +25,31 @@ const playfair = Playfair_Display({
 
 const workSans = Work_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-worksans",
 });
 
+const ebGaramond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-ebgaramond",
+});
+
 export const metadata = {
-  title: 'Tu Sitio',
-  description: 'Descripción',
-}
+  title: "Tu Sitio",
+  description: "Descripción",
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="es"
-      className={`${kanit.variable} ${ephesis.variable} ${playfair.variable} ${workSans.variable}`}
-    >
-      <body>{children}</body>
+    <html>
+      <body
+        className={`${kanit.variable} ${ephesis.variable} ${playfair.variable} ${workSans.variable}`}
+      >
+        <Navbar title="Mi web" />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

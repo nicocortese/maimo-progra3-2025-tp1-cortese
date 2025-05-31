@@ -15,7 +15,7 @@
 
 
 body {
-  background: var(--background);
+  background: #F0E6FF;
   color: var(--foreground);}
 
 h1, h2, h3 {
@@ -102,6 +102,137 @@ h1, h2, h3 {
   font-weight: 700;
   letter-spacing: 1px;
   color: #171717;
+}
+
+.recipe_container {
+  font-family: "Work Sans", sans-serif;
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f5eeee;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #1f1f20;
+  overflow: hidden;
+  text-align: left;
+}
+
+.recipe_container h1{
+  font-family: "EB Garamond", serif;
+  font-size: 40px;
+  text-align: center;
+  color: #1f1f20;
+  padding: 5px 0;
+  border-top: 2px solid #1f1f20;
+  border-bottom: 2px solid #1f1f20;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.recipe_container img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 #1f1f20;
+}
+
+.recipe_container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #1f1f20;
+  display: inline-block;
+  border-bottom: 5px solid #458ac8;
+  border-radius: 5px;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.recipe_container ul {
+  margin: 20px 0 10px 0;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.recipe_container li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  list-style: disc;
+  font-weight: 700;
+}
+
+.recipe_container p {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.recipe_container .food_info {
+  margin-top: 70px;
+  padding: 10px 20px;
+  background-color: #f7f3f3;
+  border-left: 6px solid #458ac8;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+}
+
+.recipe_container .food_info .info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1f1f20;
+  padding: 10px 15px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.recipe_container .food_info .info .info_label {
+  font-weight: bold;
+  color: #1f1f20;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.recipe_container .food_info .info .info_value {
+  color: #1f1f20; 
+}
+
+.back_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#backHome {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #172852;
+  color: #F0E6FF;
+  padding: 15px 20px;
+  cursor: pointer;
+  border: 2px solid #172852;
+  box-shadow: 0 5px 5px rgba(23, 40, 82, 0.2);
+  border-radius: 10px;
+  transition: color 0.3s ease-in-out, backgroundcolor 0.3s ease-in-out;
+  letter-spacing: 1px;
+}
+
+#backHome:hover {
+  background-color: #F0E6FF;
+  color: #172852;
+  
 }
 
 

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="logos">
         <a href="#">
           <Image
-            src="assets/facebook-svgrepo.svg"
+            src="/assets/facebook-svgrepo.svg"
             width={20}
             height={30}
             alt="Logo Facebook"
@@ -16,7 +16,7 @@ const Footer = () => {
         </a>
         <a href="#">
           <Image
-            src="assets/instagram-svgrepo.svg"
+            src="/assets/instagram-svgrepo.svg"
             width={20}
             height={30}
             alt="Logo Instagram"
@@ -24,7 +24,7 @@ const Footer = () => {
         </a>
         <a href="#">
           <Image
-            src="assets/gmail-svgrepo.svg"
+            src="/assets/gmail-svgrepo.svg"
             width={20}
             height={30}
             alt="Logo Gmail"
@@ -32,7 +32,7 @@ const Footer = () => {
         </a>
         <a href="#">
           <Image
-            src="assets/youtube-svgrepo.svg"
+            src="/assets/youtube-svgrepo.svg"
             width={20}
             height={30}
             alt="Logo Youtube"
@@ -40,7 +40,7 @@ const Footer = () => {
         </a>
         <a href="#">
           <Image
-            src="assets/whatsapp-svgrepo.svg"
+            src="/assets/whatsapp-svgrepo.svg"
             width={20}
             height={30}
             alt="Logo WhatsApp"
